@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+    <style>
+        :root {
+            text-rendering: optimizeLegibility;
+        }
+
+        body {
+            padding: 10px 100px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 100;
+            overflow: hidden;
+        }
+
+        p {
+            line-height: 150%;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+            margin: 40px 290px;
+        }
+
+        input {
+            border: 1px solid #ddd;
+            width: 100%;
+            padding: 0 10px;
+            height: 42px;
+            line-height: 42px;
+            clear: both;
+            float: left;
+        }
+
+        .container {
+            margin: 0 200px;
+        }
+
+        .hl { 
+            font-weight: 400;
+            animation-name: fadeColor;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeColor {
+            from { background-color: white; }
+            to { background-color: #ffc600; }
+        }
+    </style>
+</head>
+<body>
+    <div class="search-box">
+        <input type="text" placeholder="Search...">
+    </div>
+    <div class="container">        
+        <p id="text"></p>
+    </div>
+</body>
+</html>
